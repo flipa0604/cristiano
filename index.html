@@ -3,205 +3,268 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#06060a" />
-  <meta name="description" content="Cristiano Ronaldo — futbol tarixinidagi eng yorqin yulduzlardan biri. To'liq bioqrafiya va muhim bosqichlar." />
-  <title>Cristiano Ronaldo — Butun tarix</title>
+  <meta name="theme-color" content="#07070c" />
+  <meta name="description" content="Cristiano Ronaldo — bioqrafiya, klublar, rekordlar, mukofotlar. Wikimedia Commons rasmlari bilan boy illyustratsiyalar." />
+  <title>Cristiano Ronaldo — tarix, rasmlar, rekordlar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400..600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#asosiy">Asosiy mazmunga o‘tish</a>
   <div class="noise" aria-hidden="true"></div>
+  <div class="mesh-bg" aria-hidden="true"></div>
 
-  <header class="hero" id="bosh">
+  <header class="shell-header" id="bosh">
+    <nav class="nav container" aria-label="Asosiy navigatsiya">
+      <a class="nav__brand" href="#bosh"><span>CR7</span></a>
+      <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menyuni ochish yoki yopish">
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#highlight">Lavhalar</a></li>
+        <li><a href="#timeline">Klublar</a></li>
+        <li><a href="#titles">Mukofotlar</a></li>
+        <li><a href="#portugal">Portugal</a></li>
+        <li><a href="#stats">Raqamlar</a></li>
+        <li><a href="#gallery">Galereya</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
     <div class="hero__bg">
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/1920px-Cristiano_Ronaldo_2018.jpg"
-        alt="Cristiano Ronaldo — Portugal terma jamoasi, 2018-yilgi jahon chempionati"
+        alt=""
         width="1920"
         height="1280"
         fetchpriority="high"
       />
       <div class="hero__veil"></div>
     </div>
-    <nav class="nav">
-      <a class="nav__brand" href="#bosh">CR7</a>
-      <ul class="nav__links">
-        <li><a href="#timeline">Vaqt chizig‘i</a></li>
-        <li><a href="#stats">Raqamlar</a></li>
-        <li><a href="#footer">Manbalar</a></li>
-      </ul>
-    </nav>
-    <div class="hero__content">
-      <p class="hero__eyebrow">Futbol afsonasi</p>
-      <h1>Cristiano Ronaldo</h1>
-      <p class="hero__lead">
-        Madeira orolidan dunyo miqyosidagi rekordlargacha — tartib, mehnat va g‘olib ruhining hikoyasi.
-      </p>
-      <a class="btn btn--primary" href="#timeline">Tarixni kashf etish</a>
+    <div class="hero__inner container">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Madeira · Portugal · Jahon</p>
+        <h1 class="hero__title">Cristiano Ronaldo</h1>
+        <p class="hero__lead">
+          Professional futbolchi, kapitan va tarix yozuvchi. Uning yo‘li — orzu, intizom va har kuni o‘zidan oshishga intilish.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#timeline">Karerasi bo‘yicha</a>
+          <a class="btn btn--ghost" href="#gallery">Rasmlar</a>
+        </div>
+      </div>
+      <div class="hero__panel glass">
+        <p class="hero__panel-label">Qisqa profil</p>
+        <dl class="hero__dl">
+          <div><dt>To‘liq ism</dt><dd>Cristiano Ronaldo dos Santos Aveiro</dd></div>
+          <div><dt>Tug‘ilgan</dt><dd>1985-yil 5-fevral, Funchal, Madeira</dd></div>
+          <div><dt>O‘yinchi raqami</dt><dd>7 (asl brendi — CR7)</dd></div>
+          <div><dt>Pozitsiya</dt><dd>Hujumchi / qanot hujumchisi</dd></div>
+        </dl>
+      </div>
     </div>
-    <div class="hero__scroll" aria-hidden="true">
-      <span></span>
-    </div>
-  </header>
+    <div class="hero__scroll" aria-hidden="true"><span></span></div>
+  </section>
 
-  <main>
-    <section class="intro" id="intro">
-      <div class="container intro__grid">
+  <main id="asosiy">
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Manchester United</span><span>Real Madrid</span><span>Juventus</span><span>Portugal</span><span>Chempionlar ligasi</span><span>Oltin to‘p</span><span>Madeira</span><span>Al-Nassr</span>
+        <span>Manchester United</span><span>Real Madrid</span><span>Juventus</span><span>Portugal</span><span>Chempionlar ligasi</span><span>Oltin to‘p</span><span>Madeira</span><span>Al-Nassr</span>
+      </div>
+    </div>
+
+    <section class="intro section reveal" id="bio">
+      <div class="container intro__layout">
         <figure class="intro__figure">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Cristiano_Ronaldo_20120609.jpg/800px-Cristiano_Ronaldo_20120609.jpg"
-            alt="Ronaldo Portugal terma jamoasi bilan"
-            width="800"
-            height="1200"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Cristiano_Ronaldo_20120609.jpg/900px-Cristiano_Ronaldo_20120609.jpg"
+            alt="Ronaldo Yevro-2012 doirasida Portugal terma jamoasi bilan"
+            width="900"
+            height="1350"
             loading="lazy"
           />
-          <figcaption>Portugal terma jamoasi — xalqaro maydonlar</figcaption>
+          <figcaption>Yevropa chempionati — xalqaro maydon</figcaption>
         </figure>
-        <div class="intro__text">
-          <h2>Qisqacha</h2>
+        <div class="intro__copy">
+          <p class="section-tag">01 — Bolalik va boshlanish</p>
+          <h2 class="section-title">Qisqacha bioqrafiya</h2>
           <p>
-            <strong>Cristiano Ronaldo dos Santos Aveiro</strong> 1985-yil 5-fevralda Portugaliyaning Funchal shahrida (Madeira) tug‘ilgan.
-            U zamonaviy futbol tarixidagi eng ko‘p mukofotlangan o‘yinchilardan biri: besh marta «Oltin to‘p», bir necha marta Chempionlar ligasi g‘olibi va milliy terma jamoa bilan xalqaro turnirlar muvaffaqiyati.
+            Ronaldo Madeira orolida, oddiy oilada ulg‘aygan. Bolaligida diagnostika qilingan yurak ritmi muammosi uning sport yo‘lida to‘xtovsizlikka qarshi kurashini kuchaytirgani haqida ko‘plab hikoyalarda aytiladi. U avval <strong>Andorinha</strong> va <strong>Nacional</strong> klublarida o‘ynagan, so‘ngra <strong>Sporting CP</strong> akademiyasiga o‘tgan — aynan shu yerda uning texnik bazasi shakllangan.
           </p>
           <p>
-            Uning uslubi — tezlik, havo duelidagi ustunlik va g‘alaba uchun ichki motivatsiya — uni avlodlar o‘rtasida tengsiz qildi.
+            Professional darajada u o‘zini tezlik, dribling, hujumda ko‘p qatlam yaratish va <strong>standart vaziyatlarda</strong> (jarima va burchak zarbasi) xavfli bo‘lishi bilan ajratib turadi. Uzun yillar davomida tana va ruhiy tayyorgarlikni yuqori saqlashi uning 30+ yoshlardan keyin ham yuqori natija berishining asosiy omillaridan biri hisoblanadi.
           </p>
+          <p>
+            U shaxsiy mukofotlar (jumladan, <strong>«Oltin to‘p» / Ballon d’Or</strong> va FIFA tomonidan berilgan eng yaxshi futbolchi unvonlari), klub darajasidagi <strong>Chempionlar ligasi</strong> g‘alabalari va milliy terma jamoa bilan <strong>Yevropa chempionligi</strong> va <strong>UEFA Millatlar ligasi</strong> kabi tarixiy voqealar bilan yodda qoladi.
+          </p>
+          <aside class="facts glass">
+            <h3 class="facts__title">Tezkor faktlar</h3>
+            <ul class="facts__list">
+              <li><strong>Oila</strong> — farzandlari bilan jamoat oldida ko‘rinadi; xayriya va qon berish kampaniyalarini qo‘llab-quvvatlagan.</li>
+              <li><strong>Brend</strong> — CR7 nomi ostida moda, parfyumeriya va mehmonxonalar loyihalari.</li>
+              <li><strong>Ijtimoiy tarmoq</strong> — dunyodagi eng ko‘p kuzatuvchilardan biri (raqamlar tez o‘zgaradi).</li>
+              <li><strong>Shiori</strong> — «hard work», mukammallikka intilish va o‘zini doimiy yangilash.</li>
+            </ul>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="timeline" id="timeline">
+    <section class="highlight section reveal" id="highlight">
       <div class="container">
         <header class="section-head">
-          <h2>Vaqt chizig‘i</h2>
-          <p>Klublar, muhim yillar va burilish nuqtalari</p>
+          <p class="section-tag">02 — Vizual kontekst</p>
+          <h2 class="section-title">Joylar va davrlar</h2>
+          <p class="section-desc">Madeira, Angliya, Ispaniya va xalqaro musobaqalar — bir necha ochiq manbadan lavhalar</p>
+        </header>
+        <div class="bento">
+          <article class="bento__cell bento__cell--lg glass">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Madeira_Island.jpg/960px-Madeira_Island.jpg" alt="Madeira oroli — NASA Visible Earth" width="960" height="640" loading="lazy" />
+            <div class="bento__cap">
+              <h3>Madeira</h3>
+              <p>Atlantika orolida tug‘ilganlik joyi — tabiiy landshaft va Portugaliya madaniyati.</p>
+            </div>
+          </article>
+          <article class="bento__cell glass">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Old_Trafford.jpg" alt="Old Trafford stadioni" width="369" height="277" loading="lazy" />
+            <div class="bento__cap"><h3>Old Trafford</h3><p>Manchester United uy maydoni — ilk yulduz davri va qaytish.</p></div>
+          </article>
+          <article class="bento__cell glass">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Santiago_Bernab%C3%A9u_Stadium.JPG" alt="Santiago Bernabeu stadioni" width="448" height="257" loading="lazy" />
+            <div class="bento__cap"><h3>Bernabéu</h3><p>Real Madrid davrida tarixiy gollar va Chempionlar ligasi.</p></div>
+          </article>
+          <article class="bento__cell bento__cell--tall glass">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/800px-Cristiano_Ronaldo_2018.jpg" alt="Ronaldo 2018-yilgi jahon chempionatida" width="800" height="1200" loading="lazy" />
+            <div class="bento__cap"><h3>Jahon chempionati</h3><p>Portugal formasida — xalqaro turnirlar.</p></div>
+          </article>
+          <article class="bento__cell glass">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Cristiano_Ronaldo_2012.jpg/500px-Cristiano_Ronaldo_2012.jpg" alt="Ronaldo 2012-yil Real Madrid davrida" width="500" height="788" loading="lazy" />
+            <div class="bento__cap"><h3>Real Madrid</h3><p>2012 atrofida — klubdagi yuqori samaradorlik davri.</p></div>
+          </article>
+          <article class="bento__cell glass">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Cristiano_Ronaldo_2%2C_2010.jpg/640px-Cristiano_Ronaldo_2%2C_2010.jpg" alt="Ronaldo Real Madrid 2010" width="640" height="427" loading="lazy" />
+            <div class="bento__cap"><h3>Madrid, 2010</h3><p>Klub karerasining yodgor lahzalari.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline section" id="timeline">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-tag">03 — Klub va vaqt</p>
+          <h2 class="section-title">Batafsil vaqt chizig‘i</h2>
+          <p class="section-desc">Har bosqich — o‘yin uslubi, murabbiylar va muhim yutuqlar</p>
         </header>
 
         <ol class="timeline__list">
           <li class="timeline__item" style="--accent: #c41e3a;">
             <div class="timeline__card glass">
-              <div class="timeline__media">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/Sporting_Clube_de_Portugal_logo.svg/240px-Sporting_Clube_de_Portugal_logo.svg.png"
-                  alt="Sporting CP logotipi"
-                  width="240"
-                  height="320"
-                  loading="lazy"
-                />
-              </div>
+              <div class="timeline__media"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/Sporting_Clube_de_Portugal_logo.svg/200px-Sporting_Clube_de_Portugal_logo.svg.png" alt="Sporting CP" width="200" height="267" loading="lazy" /></div>
               <div class="timeline__body">
                 <span class="timeline__year">1997–2003</span>
-                <h3>Sporting CP</h3>
-                <p>
-                  Yosh Ronaldo akademiyada o‘sdi va 2002-yilda asosiy jamoada professional debyut qildi. U yerda texnik jihatdan shakllangan va Yevropa skautlarining e’tiborini tortdi.
-                </p>
+                <h3>Sporting CP (Lisabon)</h3>
+                <p>Akademiyada yillar davomida o‘qitilgan, keyin asosiy jamoaga ko‘tarilgan. Tezlik va texnikani birlashtirgan uslubi skautlarning e’tiborini tortdi.</p>
+                <ul class="timeline__facts">
+                  <li>Professional debyut: 2002-yil atrofida</li>
+                  <li>Pre-season va rasmiy o‘yinlarda «katta klublar» testlari</li>
+                  <li>Keyingi bosqich: Manchester Unitedga transfer</li>
+                </ul>
               </div>
             </div>
           </li>
 
           <li class="timeline__item" style="--accent: #da291c;">
             <div class="timeline__card glass">
-              <div class="timeline__media">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/240px-Manchester_United_FC_crest.svg.png"
-                  alt="Manchester United gerbi"
-                  width="240"
-                  height="240"
-                  loading="lazy"
-                />
+              <div class="timeline__grid-img">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/160px-Manchester_United_FC_crest.svg.png" alt="MU gerbi" width="160" height="160" loading="lazy" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/120px-Soccerball.svg.png" alt="" width="120" height="120" loading="lazy" />
               </div>
               <div class="timeline__body">
                 <span class="timeline__year">2003–2009</span>
                 <h3>Manchester United (I bosqich)</h3>
-                <p>
-                  Ser Alex Ferguson qo‘l ostida Ronaldo Angliya Premer-ligasida yulduzga aylandi: birinchi «Oltin to‘p» (2008), Chempionlar ligasi, klub bilan bir qator chempionliklar.
-                </p>
+                <p><strong>Ser Alex Ferguson</strong> rahbarligida Angliya futbolida portlash: birinchi «Oltin to‘p» (2008), Premer-liga va Chempionlar ligasi g‘alabasi.</p>
+                <ul class="timeline__facts">
+                  <li>Texnik jihatdan to‘liq hujumchi sifatida shakllanish</li>
+                  <li>Tezlik + zarba + havo dueli kombinatsiyasi</li>
+                  <li>Keyin: rekord transfer bilan Real Madrid</li>
+                </ul>
               </div>
             </div>
           </li>
 
           <li class="timeline__item" style="--accent: #febe10;">
             <div class="timeline__card glass">
-              <div class="timeline__media">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/240px-Real_Madrid_CF.svg.png"
-                  alt="Real Madrid logotipi"
-                  width="240"
-                  height="280"
-                  loading="lazy"
-                />
+              <div class="timeline__grid-img">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/180px-Real_Madrid_CF.svg.png" alt="Real Madrid" width="180" height="210" loading="lazy" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Cristiano_Ronaldo_2013.jpg/400px-Cristiano_Ronaldo_2013.jpg" alt="Ronaldo Portugal bilan 2013" width="400" height="267" loading="lazy" />
               </div>
               <div class="timeline__body">
                 <span class="timeline__year">2009–2018</span>
                 <h3>Real Madrid</h3>
-                <p>
-                  Rekord transfer va tarixiy raqamlar: Chempionlar ligasida ketma-ket g‘alabalar, klubning barcha vaqtlar rekordchisi bo‘lgan gol muallifi. Bu yerda u o‘zining eng yuqori darajasidagi barqarorlikni namoyish etdi.
-                </p>
+                <p>Klub tarixidagi eng yuqori samaradorlik davrlaridan biri: Chempionlar ligasida bir necha marta final va g‘alaba, La Ligada qator unvonlar, shaxsiy rekordlar.</p>
+                <ul class="timeline__facts">
+                  <li>Markaziy hujumchi va qanotdan hujum sxemalari</li>
+                  <li>UEFA Chempionlar ligasida tarixiy gol statistikasi</li>
+                  <li>Keyin: Italiya — Juventus</li>
+                </ul>
               </div>
             </div>
           </li>
 
-          <li class="timeline__item" style="--accent: #000;">
+          <li class="timeline__item" style="--accent: #ffc72c;">
             <div class="timeline__card glass">
-              <div class="timeline__media timeline__media--juve">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Juventus_2017_icon_%28black%29.svg/240px-Juventus_2017_icon_%28black%29.svg.png"
-                  alt="Juventus logotipi"
-                  width="240"
-                  height="280"
-                  loading="lazy"
-                />
+              <div class="timeline__grid-img timeline__grid-img--juve">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Juventus_2017_icon_%28black%29.svg/180px-Juventus_2017_icon_%28black%29.svg.png" alt="Juventus" width="180" height="210" loading="lazy" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Cristiano_Ronaldo_2017.jpg/400px-Cristiano_Ronaldo_2017.jpg" alt="Ronaldo 2017 Portugal" width="400" height="600" loading="lazy" />
               </div>
               <div class="timeline__body">
                 <span class="timeline__year">2018–2021</span>
                 <h3>Juventus</h3>
-                <p>
-                  Italiya Seriya Aga o‘tish yangi sinov bo‘ldi; u yerda ham chempionliklar va shaxsiy rekordlar davom etdi, jamoani xalqaro miqyosda kuchaytirdi.
-                </p>
+                <p>Seriya A va Italiya futboliga yangi yulduz: chempionliklar, shaxsiy mukofotlar, jamoani marketing va sport jihatdan kuchaytirish.</p>
+                <ul class="timeline__facts">
+                  <li>Italiya chempionligi va kuboklari</li>
+                  <li>Seriya Ada yuqori gol ko‘rsatkichlari</li>
+                  <li>Keyin: Manchester Unitedga qaytish</li>
+                </ul>
               </div>
             </div>
           </li>
 
           <li class="timeline__item" style="--accent: #da291c;">
             <div class="timeline__card glass">
-              <div class="timeline__media">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/240px-Manchester_United_FC_crest.svg.png"
-                  alt="Manchester United gerbi"
-                  width="240"
-                  height="240"
-                  loading="lazy"
-                />
-              </div>
+              <div class="timeline__media"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/200px-Manchester_United_FC_crest.svg.png" alt="MU" width="200" height="200" loading="lazy" /></div>
               <div class="timeline__body">
                 <span class="timeline__year">2021–2022</span>
                 <h3>Manchester United (qaytish)</h3>
-                <p>
-                  Afsonaviy qaytish — Old Traffordga qaytib, yana bir marta klub tarixiga yozildi. Bu davr muxlislar uchun hissiy va ramziy ahamiyatga ega bo‘ldi.
-                </p>
+                <p>Afsonaviy qaytish — Old Trafford muxlislari uchun hissiy mavsum. Shaxsiy natijalar bilan bir qator jamoa natijalari ixtilorli bo‘lgan.</p>
+                <ul class="timeline__facts">
+                  <li>Premer-ligada yana bir marta yulduz sifatida</li>
+                  <li>Keyingi bosqich: yangi liga tanlovi</li>
+                </ul>
               </div>
             </div>
           </li>
 
           <li class="timeline__item" style="--accent: #f8d749;">
             <div class="timeline__card glass">
-              <div class="timeline__media">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/Al_Nassr_FC_Logo.svg/240px-Al_Nassr_FC_Logo.svg.png"
-                  alt="Al-Nassr logotipi"
-                  width="240"
-                  height="280"
-                  loading="lazy"
-                />
+              <div class="timeline__grid-img">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/Al_Nassr_FC_Logo.svg/200px-Al_Nassr_FC_Logo.svg.png" alt="Al-Nassr" width="200" height="233" loading="lazy" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Cristiano_Ronaldo_20120609_%28cropped%29.jpg/360px-Cristiano_Ronaldo_20120609_%28cropped%29.jpg" alt="Ronaldo terma jamoada" width="360" height="558" loading="lazy" />
               </div>
               <div class="timeline__body">
                 <span class="timeline__year">2023–hozirgi</span>
                 <h3>Al-Nassr (Saudiya Arabistoni)</h3>
-                <p>
-                  Yangi chegaralar: professional karerasining keyingi bosqichida u mintaqaviy ligada o‘ynashni tanladi — global diqqat va futbolning geografiyasini kengaytirish jarayonining bir qismi.
-                </p>
+                <p>Professional kareraning yangi geografiyasi: mintaqaviy liga, xalqaro diqqat va klub brendining global kengayishi.</p>
+                <ul class="timeline__facts">
+                  <li>Mintaqaviy musobaqalar va xalqaro turnirlar</li>
+                  <li>Portugal terma jamoasi bilan parallel saf</li>
+                </ul>
               </div>
             </div>
           </li>
@@ -209,87 +272,168 @@
       </div>
     </section>
 
-    <section class="national" id="portugal">
-      <div class="national__bg">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1600px-Flag_of_Portugal.svg.png"
-          alt=""
-          width="1600"
-          height="1200"
-          loading="lazy"
-        />
-        <div class="national__veil"></div>
-      </div>
-      <div class="container national__content">
-        <div class="national__text glass">
-          <h2>Portugal terma jamoasi</h2>
-          <p>
-            Ronaldo milliy terma jamoa kapitanligi ostida Yevropa chempionligi (2016) va Millatlar ligasi (2019) kabi tarixiy muvaffaqiyatlarda asosiy figura bo‘ldi.
-            U xalqaro maydonda eng ko‘p gol urgan o‘yinchilar qatorida va o‘z mamlakatini global miqyosda vakillashda davom etmoqda.
+    <section class="titles section reveal" id="titles">
+      <div class="container titles__grid">
+        <div class="titles__intro glass">
+          <p class="section-tag">04 — Titullar</p>
+          <h2 class="section-title">Mukofotlar va turnirlar</h2>
+          <p class="section-desc">
+            Ro‘yxat to‘liq emas; rasmiy UEFA, FIFA va klub manbalarida yangilanadi. Bu yerda eng ko‘p eslatiladigan yo‘nalishlar berilgan.
           </p>
         </div>
-        <figure class="national__photo">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/960px-Cristiano_Ronaldo_2018.jpg"
-            alt="Ronaldo Portugal formasida — 2018 FIFA Jahon chempionati"
-            width="960"
-            height="640"
-            loading="lazy"
-          />
-        </figure>
+        <div class="titles__lists glass">
+          <div class="titles__block">
+            <h3>Klub (tanlangan)</h3>
+            <ul>
+              <li>UEFA Chempionlar ligasi — bir necha marta (turli klublar bilan)</li>
+              <li>Angliya Premer-ligasi, FA Kubogi, Liga Kubogi</li>
+              <li>Ispaniya La Liga va Ispaniya kubogi</li>
+              <li>Italiya Seriya A va Italiya kubogi</li>
+              <li>Klublar o‘rtasidagi jahon chempionati / UEFA Superkubogi</li>
+            </ul>
+          </div>
+          <div class="titles__block">
+            <h3>Milliy terma jamoa</h3>
+            <ul>
+              <li>UEFA Yevropa chempionati — 2016 (Fransiya)</li>
+              <li>UEFA Millatlar ligasi — 2019</li>
+              <li>Jahon chempionati va Yevropa chempionatlarida ko‘p qatnashish</li>
+              <li>Portugal terma jamoasi tarixidagi eng yuqori gol va o‘yinlar qatorida</li>
+            </ul>
+          </div>
+          <div class="titles__block">
+            <h3>Shaxsiy (tanlangan)</h3>
+            <ul>
+              <li>«Oltin to‘p» / Ballon d’Or — bir necha marta</li>
+              <li>FIFA va UEFA tomonidan «eng yaxshi futbolchi» mukofotlari</li>
+              <li>Evropa o‘lkalar chempionatlarida eng yaxshi bombardir va turnir jamoalari</li>
+              <li>Premer-liga, La Liga, Seriya Ada «eng yaxshi to‘purar» unvonlari</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="stats" id="stats">
+    <section class="national section" id="portugal">
+      <div class="national__bg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1400px-Flag_of_Portugal.svg.png" alt="" width="1400" height="1050" loading="lazy" />
+        <div class="national__veil"></div>
+      </div>
+      <div class="container national__layout reveal">
+        <div class="national__text glass">
+          <p class="section-tag">05 — Milliy terma jamoa</p>
+          <h2 class="section-title">Portugal</h2>
+          <p>
+            Ronaldo uzoq yillar davomida terma jamoa <strong>kapitan</strong>i va ruhiy yetakchisi bo‘lib keldi. 2016-yilda Fransiyada bo‘lib o‘tgan Yevropa chempionatida Portugaliya tarixidagi eng muhim unvonlardan birini qo‘lga kiritdi — finalda qo'shimcha vaqtda g‘alaba qozonilgan o‘yin muxlislar yodida qolgan voqea.
+          </p>
+          <p>
+            2019-yilda <strong>UEFA Millatlar ligasi</strong> g‘olibi bo‘ldi. Xalqaro maydonda u gol soni, o‘yin soni va yutuqlar bo‘yicha avlodining eng yuqori qatoridagi o‘yinchilardan biri sifatida qayd etiladi.
+          </p>
+          <ul class="national__bullets">
+            <li>Ko‘p qavatli hujum — qanotdan markazga, markazdan zarba</li>
+            <li>Standart vaziyatlarda xavf yaratish</li>
+            <li>Jamoani motivatsiya qilish va tajriba uzatish</li>
+          </ul>
+        </div>
+        <div class="national__shots">
+          <figure class="national__photo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Cristiano_Ronaldo_2013.jpg/800px-Cristiano_Ronaldo_2013.jpg" alt="Ronaldo terma jamoasida 2013" width="800" height="533" loading="lazy" />
+          </figure>
+          <figure class="national__photo national__photo--sm">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Cristiano_Ronaldo_2017.jpg/480px-Cristiano_Ronaldo_2017.jpg" alt="Ronaldo 2017 FIFA Konfederatsiyalar kubogi" width="480" height="720" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section reveal" id="stats">
       <div class="container">
         <header class="section-head">
-          <h2>Raqamlar va ta’sir</h2>
-          <p>Raqamlar har doim to‘liq emas, lekin miqyosni ko‘rsatadi</p>
+          <p class="section-tag">06 — Raqamlar</p>
+          <h2 class="section-title">Statistika va miqyos</h2>
+          <p class="section-desc">Animatsiya taxminiy diapazonlarni ko‘rsatadi; aniq raqamlar rasmiy manbalarda tekshirilishi kerak</p>
         </header>
         <div class="stats__grid">
           <article class="stat-card glass">
-            <span class="stat-card__value" data-count="5">0</span>
-            <span class="stat-card__label">«Oltin to‘p» (Ballon d’Or)</span>
+            <div class="stat-card__num"><span class="stat-card__value" data-count="5">0</span></div>
+            <span class="stat-card__label">«Oltin to‘p» (Ballon d’Or) — yillik mukofot</span>
           </article>
           <article class="stat-card glass">
-            <span class="stat-card__value" data-count="900">0</span>
-            <span class="stat-card__suffix">+</span>
-            <span class="stat-card__label">Professional karerasidagi gol (taxminan, kengaytirilgan statistikalar bo‘yicha)</span>
+            <div class="stat-card__num"><span class="stat-card__value" data-count="5">0</span></div>
+            <span class="stat-card__label">UEFA Chempionlar ligasi (g‘olib sifatida)</span>
           </article>
           <article class="stat-card glass">
-            <span class="stat-card__value" data-count="200">0</span>
-            <span class="stat-card__suffix">+</span>
-            <span class="stat-card__label">Portugal terma jamoasi uchun o‘yinlar (taxminiy diapazon)</span>
+            <div class="stat-card__num"><span class="stat-card__value" data-count="900">0</span><span class="stat-card__suffix">+</span></div>
+            <span class="stat-card__label">Professional karerasidagi gol (kengaytirilgan hisob-kitoblar)</span>
           </article>
           <article class="stat-card glass">
-            <span class="stat-card__value">∞</span>
-            <span class="stat-card__label">Ilg‘or yosh futbolchilarga ilhom</span>
+            <div class="stat-card__num"><span class="stat-card__value" data-count="210">0</span><span class="stat-card__suffix">+</span></div>
+            <span class="stat-card__label">Portugal terma jamoasi uchun o‘yinlar (taxminan)</span>
+          </article>
+          <article class="stat-card glass">
+            <div class="stat-card__num"><span class="stat-card__value" data-count="130">0</span><span class="stat-card__suffix">+</span></div>
+            <span class="stat-card__label">Milliy terma jamoa uchun gol (taxminan)</span>
+          </article>
+          <article class="stat-card glass">
+            <div class="stat-card__num"><span class="stat-card__value" data-count="4">0</span></div>
+            <span class="stat-card__label">Oltin butsa (Evropaning eng yaxshi to‘purari)</span>
+          </article>
+          <article class="stat-card glass">
+            <div class="stat-card__num"><span class="stat-card__value" data-count="33">0</span><span class="stat-card__suffix">+</span></div>
+            <span class="stat-card__label">Jamoa titullari (taxminiy yig‘indi)</span>
+          </article>
+          <article class="stat-card glass">
+            <div class="stat-card__num"><span class="stat-card__value">∞</span></div>
+            <span class="stat-card__label">Ta’sir — avlodlar uchun ilhom manbai</span>
           </article>
         </div>
-        <p class="stats__note">
-          Aniq statistikalar mavsum va manba bo‘yicha farq qilishi mumkin. Rasmiy klub va FIFA/UEFA ma’lumotlarini tekshirishni tavsiya qilamiz.
-        </p>
+        <p class="stats__note">Gol, o‘yin va titullar har kuni yangilanadi. FIFA, UEFA va Transfermarkt kabi mustaqil manbalarni tekshiring.</p>
       </div>
     </section>
 
-    <section class="gallery" id="gallery">
+    <section class="gallery section" id="gallery">
       <div class="container">
-        <header class="section-head">
-          <h2>Lavhalar</h2>
-          <p>Barcha rasmlar ochiq manbalardan (Wikimedia Commons) havola orqali</p>
+        <header class="section-head reveal">
+          <p class="section-tag">07 — Galereya</p>
+          <h2 class="section-title">Rasmlar va manbalar</h2>
+          <p class="section-desc">Har bir katakka bosib, Wikimedia Commonsdagi fayl sahifasiga o‘tishingiz mumkin</p>
         </header>
-        <div class="gallery__grid">
-          <a class="gallery__item" href="https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_2018.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/640px-Cristiano_Ronaldo_2018.jpg" alt="Ronaldo 2018" width="640" height="427" loading="lazy" />
-            <span>2018 — Real Madrid</span>
+        <div class="gallery__bento">
+          <a class="gallery__tile gallery__tile--hero" href="https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_2018.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/900px-Cristiano_Ronaldo_2018.jpg" alt="Ronaldo 2018" width="900" height="600" loading="lazy" /><span>2018 — terma jamoa</span>
           </a>
-          <a class="gallery__item" href="https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_20120609.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Cristiano_Ronaldo_20120609.jpg/640px-Cristiano_Ronaldo_20120609.jpg" alt="Ronaldo Portugal bilan" width="640" height="960" loading="lazy" />
-            <span>Portugal</span>
+          <a class="gallery__tile" href="https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_20120609.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Cristiano_Ronaldo_20120609.jpg/500px-Cristiano_Ronaldo_20120609.jpg" alt="Yevro-2012" width="500" height="750" loading="lazy" /><span>Yevro-2012</span>
           </a>
-          <a class="gallery__item" href="https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_2,_2010.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Cristiano_Ronaldo_2%2C_2010.jpg/640px-Cristiano_Ronaldo_2%2C_2010.jpg" alt="Ronaldo Real Madrid davrida, 2010" width="640" height="427" loading="lazy" />
-            <span>Real Madrid — 2010</span>
+          <a class="gallery__tile" href="https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_2,_2010.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Cristiano_Ronaldo_2%2C_2010.jpg/500px-Cristiano_Ronaldo_2%2C_2010.jpg" alt="2010 Real" width="500" height="333" loading="lazy" /><span>Real Madrid, 2010</span>
+          </a>
+          <a class="gallery__tile" href="https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_2013.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Cristiano_Ronaldo_2013.jpg/500px-Cristiano_Ronaldo_2013.jpg" alt="2013" width="500" height="333" loading="lazy" /><span>2013 — saralash</span>
+          </a>
+          <a class="gallery__tile" href="https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_2017.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Cristiano_Ronaldo_2017.jpg/500px-Cristiano_Ronaldo_2017.jpg" alt="2017" width="500" height="750" loading="lazy" /><span>2017</span>
+          </a>
+          <a class="gallery__tile" href="https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_2012.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Cristiano_Ronaldo_2012.jpg/500px-Cristiano_Ronaldo_2012.jpg" alt="2012" width="500" height="788" loading="lazy" /><span>2012</span>
+          </a>
+          <a class="gallery__tile" href="https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_20120609_(cropped).jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Cristiano_Ronaldo_20120609_%28cropped%29.jpg/400px-Cristiano_Ronaldo_20120609_%28cropped%29.jpg" alt="Kadrlangan" width="400" height="620" loading="lazy" /><span>Yevro-2012 (kadrlangan)</span>
+          </a>
+          <a class="gallery__tile" href="https://commons.wikimedia.org/wiki/File:Madeira_Island.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Madeira_Island.jpg/500px-Madeira_Island.jpg" alt="Madeira" width="500" height="338" loading="lazy" /><span>Madeira oroli</span>
+          </a>
+          <a class="gallery__tile" href="https://commons.wikimedia.org/wiki/File:Old_Trafford.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Old_Trafford.jpg" alt="Old Trafford" width="369" height="277" loading="lazy" /><span>Old Trafford</span>
+          </a>
+          <a class="gallery__tile" href="https://commons.wikimedia.org/wiki/File:Santiago_Bernab%C3%A9u_Stadium.JPG" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Santiago_Bernab%C3%A9u_Stadium.JPG" alt="Bernabeu" width="448" height="257" loading="lazy" /><span>Bernabéu</span>
+          </a>
+          <a class="gallery__tile gallery__tile--logo" href="https://commons.wikimedia.org/wiki/File:Soccerball.svg" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/240px-Soccerball.svg.png" alt="Futbol to‘pi" width="240" height="240" loading="lazy" /><span>Futbol ramzi</span>
+          </a>
+          <a class="gallery__tile gallery__tile--logo" href="https://commons.wikimedia.org/wiki/File:Flag_of_Portugal.svg" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/320px-Flag_of_Portugal.svg.png" alt="Portugal bayrog‘i" width="320" height="240" loading="lazy" /><span>Portugal</span>
           </a>
         </div>
       </div>
@@ -299,11 +443,11 @@
   <footer class="footer" id="footer">
     <div class="container footer__inner">
       <div>
-        <strong>CR7 — tarix</strong>
-        <p class="footer__copy">Matn va dizayn — ta’lim maqsadida. Rasmlar Wikimedia Commons litsenziyalari ostida.</p>
+        <strong class="footer__brand">CR7 — tarix</strong>
+        <p class="footer__copy">Ta’lim va muxlislik loyihasi. Rasmlarning aksariyati <a href="https://commons.wikimedia.org/wiki/Category:Cristiano_Ronaldo" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>dan; litsenziyalar har bir fayl sahifasida.</p>
       </div>
       <ul class="footer__links">
-        <li><a href="https://commons.wikimedia.org/wiki/Category:Cristiano_Ronaldo" target="_blank" rel="noopener noreferrer">Wikimedia — Ronaldo</a></li>
+        <li><a href="https://www.uefa.com/" target="_blank" rel="noopener noreferrer">UEFA</a></li>
         <li><a href="https://www.fifa.com/" target="_blank" rel="noopener noreferrer">FIFA</a></li>
         <li><a href="#bosh">Yuqoriga</a></li>
       </ul>
